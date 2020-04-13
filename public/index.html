@@ -103,7 +103,7 @@
   <script src="Build/UnityLoader.js"></script>
   <!-- <script src="Build/WebGLBuild.json"></script> -->
   <script>
-  var gameInstance = UnityLoader.instantiate("unityContainer", "Build/WebGLBuild.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("unityContainer", "Build/public.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
